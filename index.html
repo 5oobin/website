@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2228%22 font-size=%2224%22>🐈‍⬛</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Soobin Cho</title>
+    <style>
+        /* Reset and body styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%; /* Make sure the body takes the full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        body {
+            font-family: message-box;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.3;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 10%;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1em;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #6883fc;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for gray links */
+        .navbar .gray-link {
+            color: #333 !important; /* Gray color with !important to ensure it applies */
+        }
+
+        /* Container for main content */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 100px 5%;
+            max-width: 1100px;
+            margin: auto;
+            flex: 1; /* Allows the container to grow and push the footer down */
+        }
+
+        /* Main content area styling */
+        .content {
+            max-width: 700px;
+            flex: 2;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900; /* Made it bolder */
+            font-family: message-box;
+            margin-bottom: 5px; /* Reduced spacing between title and links */
+        }
+
+        .links {
+            margin-top: 0; /* Reduced spacing to bring it closer to h1 */
+            font-size: 1em;
+            font-family: message-box;
+        }
+
+        .links a {
+            color: #6883fc;
+            text-decoration: none;
+            font-size: 1em;
+            font-family: message-box;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .bio {
+            font-size: 1.1em;
+            margin-top: 20px;
+            line-height: 1.3;
+            font-family: message-box;
+        }
+
+        .bio a {
+            color: #6883fc;
+            text-decoration: none;
+        }
+
+        .bio a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add margin between paragraphs in the bio */
+        .bio p {
+            margin-bottom: 15px; /* Adjust this to control spacing */
+        }
+
+        .focus {
+            font-size: 0.9em;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+            font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+            margin-top: 20px;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            flex: 1;
+            padding-left: 20px;
+            padding-top: 130px;
+            text-align: center; /* Center-aligns the content in the sidebar */
+        }
+
+        .sidebar img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Centered email below image with monospace font */
+        .sidebar .mail {
+            font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace; /* IBM Plex Mono as primary font */
+            font-weight: 500; /* Bold weight for emphasis */
+            font-size: 0.9em;
+            letter-spacing: -0.5px; /* Adjust spacing for a tighter look if needed */
+            margin-top: 3px;
+            text-align: center;
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #ddd;
+            margin-top: auto; /* Ensures footer stays at the bottom */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="gray-link">Research</a>
+        <a href="portfolio.html" class="gray-link">Portfolio</a>
+        <a href="gato.html">🐈‍⬛</a>
+    </nav>
+
+    <div class="container">
+        <!-- Main Content -->
+        <div class="content">
+            <h1>Soobin Cho</h1>
+            <div class="links">
+                <a href="pdf/CV.pdf">CV</a> / <a href="pdf/resume.pdf">Resume</a> / <a href="https://www.linkedin.com/in/soobin-cho-2b8497296">LinkedIn</a> / <a href="https://scholar.google.com/citations?user=BD8yCNwAAAAJ&hl=en&oi=ao">Google Scholar</a>
+            </div>
+
+            <div class="bio">
+                <p>Hello!</p>
+                <p>I'm a second-year Ph.D. student in <a href="https://www.hcde.washington.edu/">Human Centered Design & Engineering</a> at the University of Washington, advised by <a href="https://www.hcde.washington.edu/mcdonald">Prof. David McDonald</a> and <a href="https://www.hcde.washington.edu/zachry">Prof. Mark Zachry</a>. I previously earned my M.S. in Intelligence and Information from <a href="https://www.snu.ac.kr/">Seoul National University</a> and my B.A. from <a href="https://www.ewha.ac.kr/">Ewha Womans University</a>. I also worked as a UX researcher at <a href="https://www.soft-berry.com/">Soft Berry Inc</a>.</p>
+                <p>As an HCI and UX researcher, I study user behavior and design systems <b>centered on 'humans'</b>. Humans are endlessly fascinating, because our complex and deeply human nature remains constant even when interacting with the most advanced systems. <b>As social beings, this complexity becomes even more pronounced when we connect, interact, and collaborate</b>—whether with other people or with systems. My research has always centered on how people form connections, both with others through systems and directly with systems themselves.</p>
+                <p>While I have studied various systems, <b>my PhD focuses specifically on AI, examining how users create and navigate social dynamics with and through these technologies</b>. My goal is to design systems that honor and support what makes us human in the nuanced moments of connecting with other beings or things.</p>
+            </div>
+
+        </div>
+
+        <!-- Sidebar with Image and Email -->
+        <div class="sidebar">
+            <img src="img/prof_pic.jpg" alt="Soobin Cho">
+            <div class="mail">email: soobin30[at]uw[dot]edu</div>
+            <div class="focus">
+                <p><em><strong>Focus Areas:</strong> Human-AI Interaction, Human-Agent Interaction, Social Computing, Computer-Supported Cooperative Work</em></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; Copyright 2024 Soobin Cho. Last updated in 11/2024.
+    </div>
+
+</body>
+</html>
