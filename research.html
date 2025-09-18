@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2228%22 font-size=%2224%22>🐈‍⬛</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E93E698XH8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-E93E698XH8');
+    </script>
+
+    <title>Soobin Cho - Research</title>
+    <style>
+        /* Reset and body styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%; /* Make sure the body takes the full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        body {
+            font-family: message-box;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.3;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 10%;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1em;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #6883fc;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for gray links */
+        .navbar .gray-link {
+            color: #333 !important;
+        }
+
+        .navbar .home-link {
+            margin-right: auto;
+            font-size: 1.2em;
+        }
+
+        /* Container for main content */
+        .container {
+            padding: 100px 10%; /* Matching padding to make the content similar to About page width */
+            max-width: 1200px;
+            margin: auto;
+            flex: 1;
+        }
+
+        /* Research Title and Subtitle */
+        .research-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .research-subtitle {
+            font-size: 1rem;
+            font-family: 'IBM Plex Mono', monospace;
+            letter-spacing: -0.7px;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .section {
+            font-family: 'IBM Plex Mono', monospace;
+            margin-top: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .section .section-button {
+        font-size: 13px;
+        color: #ffffff;
+        background-color: #6883fc7e;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        letter-spacing: -0.7px;
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Ensures padding applies evenly */
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .section .section-button:hover {
+        background-color: #6883fcd1; /* Darker background on hover */
+        text-decoration: underline;
+        }
+
+        .subheading {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'IBM Plex Mono', monospace;
+            letter-spacing: -0.9px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            text-align: left
+        }
+
+        .topic {
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 0;
+        }
+
+        .role {
+        font-size: 0.9em;
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-style: italic;
+        }
+
+        .title {
+        font-size: 0.9em;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 0;
+        }
+
+        .content {
+        font-size: 0.8em;
+        margin-top: 0;
+        }
+
+        .content a {
+            color: #6883fc;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #ddd;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="home-link">Soobin Cho</a>
+        <a href="research.html">Research</a>
+        <a href="portfolio.html" class="gray-link">Portfolio</a>
+        <a href="gato.html" class="gray-link">Gato</a>
+    </nav>
+
+    <!-- Portfolio Content Section -->
+    <div class="container">
+        <h1 class="research-title">Research</h1>
+        <p class="research-subtitle">Academic Research Projects and Publications</p>
+
+        <div class="section">
+            <a href="#AIcollab" class="section-button">AI in Collaborative Work</a>&nbsp;
+            <a href="#virtual" class="section-button">Virtual Collaboration</a>&nbsp;
+            <a href="#conv" class="section-button">Conversational Agents</a>&nbsp;
+            <a href="#speaker" class="section-button">Smart Speakers</a>&nbsp;
+            <a href="#SNS" class="section-button">Social Media Safety</a>
+        </div>
+        
+        <!-- AI in Collaborative Work Section -->
+        <h3 id="AIcollab" class="subheading">AI in Collaborative Work</h3>
+        
+        <table width="100%" cellpadding="20">
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/Wiki.png" height="150" width="150" alt="Wikipedia tool image">
+                        <div>
+                            <p class="topic">[Ongoing] Towards a Framework for AI-Supported Mediation in Community-based Online Collaboration</p>
+                            <p class="role">Lead Researcher, University of Washington</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Working toward building an information-focused framework with content, culture, and people as the main information elements.</p>
+                            <p class="title">Publication</p>
+                            <p class="content"><strong>Soobin Cho</strong>, Mark Zachry, and David W. McDonald. A Framework for AI-Supported Mediation in Community-based Online Collaboration. <strong><i>2025 CSCW workshop</i></strong> <i>'Augmenting Collaborative Problem-Solving: Exploring the Design and Use of GenAI for Groupwork'</i> [<a href="pdf/2509.10015v2.pdf" target="_blank">pdf</a>]</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/culture.png" height="150" width="150" alt="Wikipedia tool image">
+                        <div>
+                            <p class="topic">[Ongoing] Building a Culture-Sensitive AI for Discussions in Wikipedia</p>
+                            <p class="role">Lead Researcher, University of Washington</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Currently preparing training datasets of Wikipedia policy application cases.</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/content.png" height="150" width="150" alt="Wikipedia tool image">
+                        <div>
+                            <p class="topic">[Ongoing] Exploring How AI Can Assist Comprehension of Wikipedia Discussions</p>
+                            <p class="role">Lead Researcher, University of Washington</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Created a web-based prototype with LLM-powered features and iteratively refined functionality through user feedback.</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/Moyan.png" height="150" width="150" alt="Summary tool research image">
+                        <div>
+                            <p class="topic">Understanding How LLMs Impact Participation in Knowledge Communities with a Focus on Wikipedia</p>
+                            <p class="role">Research Assistant, University of Washington</p>
+                            <p class="title">Role</p>
+                            <p class="content">Assisted with qualitative interview analysis and the structuring of key insights that revealed differing impacts on experienced and novice editors.</p>
+                            <p class="title">Publication</p>
+                            <p class="content">Under review</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/summ.png" height="150" width="150" alt="Summary tool research image">
+                        <div>
+                            <p class="topic">Examining Wikipedian Views on Key Elements of Discussion Summaries</p>
+                            <p class="role">Lead Researcher, University of Washington</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Conducted interviews identifying 13 key elements for discussion summaries and found that AI summaries often missed community-specific aspects.</p>
+                            <p class="title">Publication</p>
+                            <p class="content"><strong>Soobin Cho</strong>, Mark Zachry, and David W. McDonald. Towards Insider Summarization for Mediation Instead of Moderation: Examining Wikipedian Views on Key Elements of Discussion Summaries. <strong><i>CSCW'25</i></strong> [<a href="pdf/3757681.pdf" target="_blank">pdf</a>]</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Virtual Collaboration Section -->
+        <h3 id="virtual" class="subheading">Virtual Collaboration</h3>
+        
+        <table width="100%" cellpadding="20">
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/virtual.png" height="150" width="150" alt="Virtual collaboration tools image">
+                        <div>
+                            <p class="topic">Understanding Co-Studying Activity on Video Conferencing Rooms</p>
+                            <p class="role">Lead Researcher, Seoul National University</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Conducted interviews, a survey, and video analysis to uncover the tension between users’ desire to hide and reveal themselves on camera.</p>
+                            <p class="title">Publication</p>
+                            <p class="content"><strong>Soobin Cho</strong>, Joongseek Lee, and Bongwon Suh. “I Want to Reveal, but I Also Want to Hide” Understanding the Conflict of Revealing and Hiding Needs in Virtual Study Rooms. <strong><i>CSCW’23</i></strong> [<a href="pdf/3610091.pdf" target="_blank">pdf</a>]</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/interface.png" height="150" width="150" alt="New video conferencing interface image">
+                        <div>
+                            <p class="topic">Designing a New Video Conferencing Interface for Virtual Studying</p>
+                            <p class="role">Lead Researcher, Seoul National University</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Designed and conducted usability testing of video conferencing interfaces that detect study-related motion while minimizing camera exposure.</p>
+                            <p class="title">Publication</p>
+                            <p class="content"><strong>Soobin Cho</strong>, Bongwon Suh, and Joongseek Lee. “Hide Your Video, Show Your Action!” Investigating a New Video Conferencing Interface for Virtual Studying. <strong><i>CSCW’22 Poster</i></strong> [<a href="pdf/3500868.pdf" target="_blank">pdf</a>]</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/awareness.png" height="150" width="150" alt="Remote awareness study image">
+                        <div>
+                            <p class="topic">Investigating Information Needed for Awareness between Remote Workers</p>
+                            <p class="role">Lead Researcher, Seoul National University</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Designed a pseudo-service and ran a one-week usability study with remote workers to examine which awareness information they wanted to share and receive.</p>
+                            <p class="title">Publication</p>
+                            <p class="content"><strong>Soobin Cho</strong>, Bongwon Suh, and Joongseek Lee. Not Too Much, Nor Too Less: Investigating Which Information Should Be Shared for Awareness Between Remote Workers. <strong><i>CSCW’20 Poster</i></strong> [<a href="pdf/3406865.pdf" target="_blank">pdf</a>]</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <!-- Conversational Agents Section -->
+        <h3 id="conv" class="subheading">Conversational Agents</h3>
+        
+        <table width="100%" cellpadding="40">
+            <!--
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/reddit.png" height="150" width="150" alt="Companion image">
+                        <div>
+                            <p class="topic">[Ongoing] Investigating User Sense-Making and Strategies for Navigating Uncertainty in AI Companion Chatbots</p>
+                            <p class="role">Lead Researcher, University of Washington</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Currently conducting manual and LLM-assisted qualitative analysis of Reddit discussions from AI companion user communities.</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            -->
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/principle.png" height="150" width="150" alt="Companion image">
+                        <div>
+                            <p class="topic">Rethinking Design Principles for AI Companions</p>
+                            <p class="role">Lead Researcher, University of Washington</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Conducted a five-phase multi-method study showing the collapse of ethics-UX boundaries in AI companion design and the need for flexible principle implementation.</p>
+                            <p class="title">Publication</p>
+                            <p class="content">Under review</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/companion.png" height="150" width="150" alt="Companion image">
+                        <div>
+                            <p class="topic">Exploring Short-Lived AI Companion Chatbots through Collaborative Autoethnography</p>
+                            <p class="role">Lead Researcher, University of Washington</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Led a 10-day collaborative autoethnography with AI companion chatbots as part of the broader five-phase study.</p>
+                            <p class="title">Publication</p>
+                            <p class="content"><strong>Soobin Cho</strong>, Anna Lindner, Joseph S. Schafer, Pitch Sinlapanuntakul, Julie A. Vera, and Mark Zachry. Collaborative Autoethnography as a Method to Explore Short-Lived Social AI Chatbots. <strong><i>HAI’25 Poster</i></strong> [<a href="pdf/3765830.pdf" target="_blank">pdf</a>]</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/knock.png" height="150" width="150" alt="Knock chatbot image">
+                        <div>
+                            <p class="topic">Designing a Knowledge-Sharing Chatbot for a Co-Living Space</p>
+                            <p class="role">Lead Researcher, Seoul National University</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Designed a chatbot prototype supporting information sharing through interviews and a co-creation workshop, and conducted a one-week usability study in a co-living space.</p>
+                            <p class="title">Publications</p>
+                            <p class="content">Sang Ah Park, Yoon Young Lee, <strong>Soobin Cho</strong>, Minjoon Kim, and Joongseek Lee. “Knock Knock, Here Is an Answer from Next Door”: Designing a Knowledge Sharing Chatbot to Connect Residents: Community Chatbot Design Case Study. <strong><i>CSCW’21 Poster</i></strong> [<a href="pdf/3462204.pdf" target="_blank">pdf</a>]</p>
+                            <p class="content">Sang Ah Park, <strong>Soobin Cho</strong>, Yoon Young Lee, and Joongseek Lee. ‘Naver Knowledge-iN’ in a Speaker: Designing a Voice-Based Knowledge Sharing Service. <strong><i>HCIK 2021</i></strong> [<a href="pdf/Knowledge.pdf" target="_blank">pdf</a>]</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Smart Speakers Section -->
+        <h3 id="speaker" class="subheading">Smart Speakers</h3>
+        
+        <table width="100%" cellpadding="40">
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/single.png" height="150" width="150" alt="Single households study image">
+                        <div>
+                            <p class="topic">Understanding Single Households’ Casual Conversations with Smart Speakers</p>
+                            <p class="role">Lead Researcher, Seoul National University</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Conducted a six-week field study of single households’ smart speaker use, revealing limits to casual conversation.</p>
+                            <p class="title">Publication</p>
+                            <p class="content"><strong>Soobin Cho</strong>, Yoon Young Lee, Sang Ah Park, and Joongseek Lee. “Can Smart Speaker Be the ‘SimSimi’ for Single Households?”: Study on the Use of Smart Speakers by Single Households. <strong><i>HCIK 2021</i></strong> [<a href="pdf/SimSimi.pdf" target="_blank">pdf</a>]</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/classic.png" height="150" width="150" alt="Classical music app image">
+                        <div>
+                            <p class="topic">Building a Smart Speaker Application for Classical Music Beginners</p>
+                            <p class="role">Research Assistant, Seoul National University</p>
+                            <p class="title">Role</p>
+                            <p class="content">Assisted in designing a smart speaker service introducing classical music and collected VOCs during a 15-day usability study.</p>
+                            <p class="title" id="media-reports"><strong>Media Reports</strong></p>
+                            <p class="content">
+                                <a href="https://www.sedaily.com/NewsView/22H9KCAA87" target="_blank">Seoul Economic Daily</a>,
+                                <a href="https://www.ajunews.com/view/20210113091441205" target="_blank">Aju News</a>,
+                                <a href="https://www.edaily.co.kr/news/read?newsId=02276326628917392&mediaCodeNo=257" target="_blank">E Daily</a>,
+                                <a href="https://m.mbn.co.kr/news/culture/4398644" target="_blank">MBN News</a>,
+                                <a href="https://www.newdaily.co.kr/site/data/html/2021/01/13/2021011300026" target="_blank">New Daily</a>,
+                                <a href="https://www.sportsseoul.com/news/read/1001826" target="_blank">Sports Seoul</a>,
+                                <a href="https://news.nate.com/view/20210113n08385" target="_blank">Nate News</a>,
+                                <a href="http://www.sctoday.co.kr/news/articleView.html?idxno=34609" target="_blank">Seoul Culture Today</a>
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/separate.png" height="150" width="150" alt="AI auditory cues study image">
+                        <div>
+                            <p class="topic">Investigating Auditory Cues for Separateness of AI Speaker Services</p>
+                            <p class="role">Lead Researcher, Seoul National University</p>
+                            <p class="title">Overview</p>
+                            <p class="content">Designed and conducted usability testing of smart speaker services featuring different auditory cues.</p>
+                            <p class="title">Publication</p>
+                            <p class="content"><strong>Soobin Cho</strong> and Joongseek Lee. Study on Auditory Cues for Conversation Separateness in AI Speaker Multi-Turn Services. <strong><i>HCIK 2020</i></strong> [<a href="pdf/Auditory.pdf" target="_blank">pdf</a>]</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Social Media Safety Section -->
+        <h3 id="SNS" class="subheading">Social Media Safety</h3>
+        
+        <table width="100%" cellpadding="20">
+            <tr>
+                <td colspan="2" style="padding: 10px; padding-top: 20px; padding-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 50px;">
+                        <img src="img/teen.png" height="150" width="150" alt="Teen privacy project image">
+                        <div>
+                            <p class="topic">Designing to Protect Privacy and Reduce Fear for Teens on Social Media</p>
+                            <p class="role">Research Assistant, University of Washington</p>
+                            <p class="title">Role</p>
+                            <p class="content">Assisted in analyzing interviews on teens’ social media fears and in surveying ten empowerment-focused design prototypes.</p>
+                            <p class="title">Publication</p>
+                            <p class="content">JaeWon Kim, <strong>Soobin Cho</strong>, Robert Wolfe, Jishnu Hari Nair, and Alexis Hiniker. Privacy as Social Norm: Systematically Empowering Teen Privacy Management on Social Media. <strong><i>CSCW’25</i></strong> [<a href="pdf/3711049.pdf" target="_blank">pdf</a>]</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; Copyright 2024 Soobin Cho. Last updated in 09/2025.
+    </div>
+
+</body>
+</html>
