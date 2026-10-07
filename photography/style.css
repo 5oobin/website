@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ink: #333333;
+    --ink-soft: #555;
+    --ink-faint: #8a8a8a;
+    --line: #eaeaea;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: #ffffff;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 4%;
+    border-bottom: 1px solid var(--line);
+}
+
+.site-title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ink);
+}
+
+.tabs {
+    display: flex;
+    gap: 28px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    letter-spacing: 0.5px;
+    color: var(--ink-faint);
+    cursor: pointer;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.tab-btn:hover {
+    color: var(--ink);
+}
+
+.tab-btn.active {
+    color: var(--ink);
+    border-bottom-color: var(--ink);
+}
+
+/* Masonry grid */
+.grid {
+    column-count: 4;
+    column-gap: 4px;
+    padding: 4px;
+}
+
+.grid-item {
+    break-inside: avoid;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.grid-item.is-hidden {
+    display: none;
+}
+
+.grid-item img {
+    width: 100%;
+    display: block;
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+}
+
+.grid-item img:hover {
+    opacity: 0.92;
+}
+
+.empty-state {
+    padding: 120px 20px;
+    text-align: center;
+    color: var(--ink-faint);
+    font-size: 0.9rem;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 20, 20, 0.86);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 1000;
+    padding: 30px;
+}
+
+.lightbox.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 22px;
+    right: 28px;
+    font-size: 1.6rem;
+    color: #ffffff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.18s ease;
+}
+
+.lightbox-close:hover {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .grid {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 720px) {
+    .grid {
+        column-count: 2;
+    }
+
+    .header {
+        padding: 20px 5%;
+    }
+}
+
+@media (max-width: 420px) {
+    .grid {
+        column-count: 1;
+    }
+}

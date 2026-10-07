@@ -6,8 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2228%22 font-size=%2224%22>🐈‍⬛</text></svg>">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E93E698XH8"></script>
     <script>
@@ -19,220 +19,220 @@
     </script>
 
     <title>Soobin Cho</title>
-    <style>
-        /* Reset and body styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%; /* Make sure the body takes the full viewport height */
-            display: flex;
-            flex-direction: column;
-        }
-        
-        body {
-            font-family: message-box;
-            background-color: #ffffff;
-            color: #333;
-            line-height: 1.3;
-        }
-
-        /* Navigation Bar Styling */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            padding: 20px 10%;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 1em;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-bottom: 1px solid #ddd;
-            z-index: 1000;
-        }
-
-        .navbar a {
-            color: #6883fc;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-
-        /* Style for gray links */
-        .navbar .gray-link {
-            color: #333 !important; /* Gray color with !important to ensure it applies */
-        }
-
-        .navbar .home-link {
-            margin-right: auto;
-            font-size: 1.2em;
-        }
-
-        /* Container for main content */
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 100px 5%;
-            max-width: 1100px;
-            margin: auto;
-            flex: 1; /* Allows the container to grow and push the footer down */
-        }
-
-        /* Main content area styling */
-        .content {
-            max-width: 700px;
-            flex: 2;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 900; /* Made it bolder */
-            font-family: message-box;
-            margin-bottom: 5px; /* Reduced spacing between title and links */
-        }
-
-        .links {
-            margin-top: 0; /* Reduced spacing to bring it closer to h1 */
-            font-size: 1em;
-            font-family: message-box;
-        }
-
-        .links a {
-            color: #6883fc;
-            text-decoration: none;
-            font-size: 1em;
-            font-family: message-box;
-        }
-
-        .links a:hover {
-            text-decoration: underline;
-        }
-
-        .bio {
-            font-size: 1.1em;
-            margin-top: 20px;
-            line-height: 1.3;
-            font-family: message-box;
-        }
-
-        .bio a {
-            color: #6883fc;
-            text-decoration: none;
-        }
-
-        .bio a:hover {
-            text-decoration: underline;
-        }
-
-        /* Add margin between paragraphs in the bio */
-        .bio p {
-            margin-bottom: 15px; /* Adjust this to control spacing */
-        }
-
-        .focus {
-            font-size: 0.9em;
-            line-height: 1.3;
-            letter-spacing: -0.5px;
-            font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        /* Sidebar styling */
-        .sidebar {
-            flex: 1;
-            padding-left: 20px;
-            padding-top: 130px;
-            text-align: center; /* Center-aligns the content in the sidebar */
-        }
-
-        .sidebar img {
-            width: 100%;
-            max-width: 250px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-        }
-
-        /* Centered email below image with monospace font */
-        .sidebar .mail {
-            font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace; /* IBM Plex Mono as primary font */
-            font-weight: 500; /* Bold weight for emphasis */
-            font-size: 0.9em;
-            letter-spacing: -0.5px; /* Adjust spacing for a tighter look if needed */
-            margin-top: 3px;
-            text-align: center;
-        }
-
-        /* Footer styling */
-        .footer {
-            text-align: center;
-            padding: 15px 0;
-            font-size: 0.9rem;
-            color: #666;
-            border-top: 1px solid #ddd;
-            margin-top: auto; /* Ensures footer stays at the bottom */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="index.html" class="home-link">Soobin Cho</a>
-        <a href="research.html" class="gray-link">Research</a>
-        <a href="portfolio.html" class="gray-link">Portfolio</a>
-        <a href="gato.html" class="gray-link">Gato</a>
-    </nav>
+<div class="page">
 
-    <div class="container">
-        <!-- Main Content -->
-        <div class="content">
-            <h1>Soobin Cho</h1>
-            <div class="links">
-                <a href="pdf/CV.pdf" target="_blank">CV</a> / <!-- <a href="pdf/resume.pdf">Resume</a> /--> <a href="https://www.linkedin.com/in/soobin-cho-2b8497296" target="_blank">LinkedIn</a> / <a href="https://scholar.google.com/citations?user=BD8yCNwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
-            </div>
-
-            <div class="bio">
-                <p>Hello!</p>
-                <p>I'm a third-year Ph.D. student in <a href="https://www.hcde.washington.edu/" target="_blank">Human Centered Design & Engineering</a> (HCI) at the University of Washington,
-                    advised by <a href="https://www.hcde.washington.edu/mcdonald" target="_blank">Prof. David McDonald</a> and <a href="https://www.hcde.washington.edu/zachry" target="_blank">Prof. Mark Zachry</a>.
-                    I previously earned my M.S. in Engineering (HCI) at <a href="https://www.snu.ac.kr/" target="_blank">Seoul National University</a>, and a B.A. in Communication & Media from <a href="https://www.ewha.ac.kr/" target="_blank">Ewha Womans University</a>.</p>
-                <!-- <p>I'm a third-year Ph.D. student in <a href="https://www.hcde.washington.edu/">Human Centered Design & Engineering</a> at the University of Washington,
-                    advised by <a href="https://www.hcde.washington.edu/mcdonald">Prof. David McDonald</a> and <a href="https://www.hcde.washington.edu/zachry">Prof. Mark Zachry</a>.
-                    I previously earned my M.S. in Intelligence and Information from <a href="https://www.snu.ac.kr/">Seoul National University</a>,
-                    where I was part of the <a href=https://ux.snu.ac.kr>SNU UX Lab</a> under the guidance of <a href="https://convergence.snu.ac.kr/snu__professor/lee_joongseek">Prof. Joongseek Lee</a>,
-                    and a B.A. from <a href="https://www.ewha.ac.kr/">Ewha Womans University</a>.
-                    I also worked as the first and sole UX researcher at <a href="https://www.soft-berry.com/">Soft Berry Inc</a>, a Korean Series A startup.</p> -->
-                <!-- <p>I am deeply interested in the ways people connect and collaborate with others (or with human-like entities), moments in which humanness and complexity are most vividly amplified.</p> -->
-                <p>My PhD research focuses on how AI can support community-sensitive mediation of conflicts that arise in the collaborative work of online communities.
-                    I am also exploring different dimensions of human interaction with AI companions.</p>
-            </div>
-
-            <div class="focus">
-                <p><em><strong>Focus Areas:</strong> Computer-Supported Cooperative Work (CSCW), Computer-Mediated Communication (CMC), Human-AI Interaction, Human-Agent Interaction</em></p>
-            </div>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="avatar-wrap">
+            <img src="img/prof_pic.jpg" alt="Soobin Cho" class="avatar">
+            <a class="deco-icon deco-cat" href="https://www.instagram.com/chaos.gato?igsh=dWFub2l0azJ3Z2lh&utm_source=qr" target="_blank" title="Instagram">🐈‍⬛</a>
+            <a class="deco-icon deco-camera" href="photography/index.html" target="_blank" title="Photography">📷</a>
         </div>
 
-        <!-- Sidebar with Image and Email -->
-        <div class="sidebar">
-            <img src="img/prof_pic.jpg" alt="Soobin Cho">
-            <div class="mail">email: soobin30[at]uw[dot]edu</div>
-        </div>
-    </div>
+        <h1 class="name">Soobin Cho</h1>
 
-    <!-- Footer -->
-    <div class="footer">
-        &copy; Copyright 2024 Soobin Cho. Last updated in 02/2026.
-    </div>
+        <div class="bio">
+            <p>Hello! I'm a PhD candidate in <a href="https://www.hcde.washington.edu/" target="_blank">Human Centered Design &amp; Engineering</a> (HCI) at the University of Washington,
+                advised by <a href="https://www.hcde.washington.edu/mcdonald" target="_blank">Prof. David McDonald</a> and <a href="https://www.hcde.washington.edu/zachry" target="_blank">Prof. Mark Zachry</a>.
+                I previously earned my MS in Engineering (HCI) from <a href="https://en.snu.ac.kr/" target="_blank">Seoul National University</a>, and a BA in Communication &amp; Media from <a href="https://www.ewha.ac.kr/ewhaen/index.do" target="_blank">Ewha Womans University</a>.</p>
+        </div>
+
+        <div class="contact-list">
+            <span class="contact-item is-static">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                soobin30[at]uw[dot]edu
+            </span>
+            <a class="contact-item" href="pdf/CV.pdf" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>
+                Curriculum Vitae
+            </a>
+            <a class="contact-item" href="https://scholar.google.com/citations?user=BD8yCNwAAAAJ&hl=en&oi=ao" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg>
+                Google Scholar
+            </a>
+            <a class="contact-item" href="https://www.linkedin.com/in/soobin-cho-2b8497296" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M7.5 7.75v.01M11.5 16.5v-3.5c0-1.4 1-2.5 2.4-2.5s2.1 1 2.1 2.5v3.5"/></svg>
+                LinkedIn
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="content">
+        <p class="content-intro">I am deeply interested in how computer systems help, or can help, us navigate our complex social needs when collaborating and communicating with others. My dissertation research focuses on how AI can support people in making sense of discussions in socially complex collaborative contexts such as Wikipedia.</p>
+
+        <p class="focus-line"><span class="focus-highlight">Computer-Supported Cooperative Work</span> &middot; <span class="focus-highlight">Computer-Mediated Communication</span> &middot; <span class="focus-highlight"><span class="nowrap">AI-Mediated</span> Communication and Collaboration</span></p>
+
+        <h2 class="content-title">Research Projects and Publications</h2>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai-mediated"><span class="nowrap">AI-Mediated</span> Communication and Collaboration</button>
+            <button class="filter-btn" data-filter="cmc">Computer-Mediated Communication and Collaboration</button>
+            <button class="filter-btn" data-filter="hai">Human&ndash;AI Interaction in Social and Conversational Systems</button>
+        </div>
+
+        <div class="pub-list">
+
+            <!-- AI-Mediated Communication and Collaboration -->
+            <article class="pub-card" data-category="ai-mediated" data-order="1">
+                <div class="pub-tag pub-tag-ongoing">Ongoing</div>
+                <h3 class="pub-title">Investigating LLM-Assisted Participant Profiles for Sensemaking in Wikipedia Discussions</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Designing prototypes that present participant information with varying levels of LLM interpretation, and exploring them through interviews.</p>
+            </article>
+
+            <article class="pub-card" data-category="ai-mediated" data-order="2">
+                <div class="pub-tag pub-tag-ongoing">Ongoing</div>
+                <h3 class="pub-title">Investigating LLM-Assisted Community Norm Guidance for Sensemaking in Wikipedia Discussions</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Developing a norm-aware AI that reasons about how Wikipedia policies apply to discussions, using curated datasets of past application cases.</p>
+            </article>
+
+            <article class="pub-card" data-category="ai-mediated" data-order="4">
+                <div class="pub-tag pub-tag-review">Under review</div>
+                <h3 class="pub-title">Exploring LLM-Assisted Information Restructuring for Sensemaking in Wikipedia Discussions</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Examined how people restructure information to support sensemaking of complex disputes on Wikipedia, using a web-based prototype with LLM-supported features.</p>
+            </article>
+
+            <article class="pub-card" data-category="ai-mediated" data-order="8">
+                <div class="pub-tag pub-tag-venue">CSCW&rsquo;25</div>
+                <h3 class="pub-title">Examining Wikipedian Views on Key Elements for LLM-Generated Discussion Summaries</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Conducted interviews identifying 13 key elements for discussion summaries and found that AI summaries often missed community-specific aspects.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/3757681.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+            <article class="pub-card" data-category="ai-mediated" data-order="3">
+                <div class="pub-tag"><span class="pub-tag-ongoing">Ongoing,</span> <span class="pub-tag-venue-inline">CSCW&rsquo;26 Poster</span></div>
+                <h3 class="pub-title">Examining Students' Use of LLMs for Interpersonal Communication in Academic Settings</h3>
+                <p class="pub-role">Principal Investigator</p>
+                <p class="pub-desc">Advising a case-based interview study on why and how students use AI to communicate with different recipients across channels.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/CSCW_26_Poster_AIMC_student.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+            <article class="pub-card" data-category="ai-mediated" data-order="5">
+                <div class="pub-tag pub-tag-venue">CSCW&rsquo;26</div>
+                <h3 class="pub-title">Understanding How LLMs Impact Participation in Knowledge Communities with a Focus on Wikipedia</h3>
+                <p class="pub-role">Research Assistant</p>
+                <p class="pub-desc">Assisted with qualitative interview analysis and the structuring of key insights that revealed differing impacts on experienced and novice editors.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/3816964.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+            <article class="pub-card" data-category="ai-mediated" data-order="12">
+                <div class="pub-tag pub-tag-venue">CSCW&rsquo;21 Poster, HCIK 2021</div>
+                <h3 class="pub-title">Designing a Knowledge-Sharing Chatbot for Residents of Single-Person Housing</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Designed a chatbot prototype supporting information sharing through interviews and a co-creation workshop, and conducted a one-week usability study in a co-living space.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/3462204.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>CSCW&rsquo;21 Poster</a>
+                    <a class="pdf-chip" href="pdf/Knowledge.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>HCIK 2021</a>
+                </div>
+            </article>
+
+            <!-- Computer-Mediated Communication and Collaboration -->
+            <article class="pub-card" data-category="cmc" data-order="9">
+                <div class="pub-tag pub-tag-venue">CSCW&rsquo;25</div>
+                <h3 class="pub-title">Designing to Protect Privacy and Reduce Fear for Teens on Social Media</h3>
+                <p class="pub-role">Research Assistant</p>
+                <p class="pub-desc">Assisted in analyzing interviews on teens&rsquo; social media fears and in surveying ten empowerment-focused design prototypes.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/3711049.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+            <article class="pub-card" data-category="cmc" data-order="11">
+                <div class="pub-tag pub-tag-venue">CSCW&rsquo;23</div>
+                <h3 class="pub-title">Understanding Virtual Co-Studying Practices via Video Conferencing</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Conducted interviews, a survey, and video analysis to uncover the tension between users&rsquo; desire to hide and reveal themselves on camera.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/3610091.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+            <article class="pub-card" data-category="cmc" data-order="10">
+                <div class="pub-tag pub-tag-venue">CSCW&rsquo;22 Poster</div>
+                <h3 class="pub-title">Designing a Video Conferencing Interface for Virtual Co-Studying</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Designed and conducted usability testing of video conferencing interfaces that detect study-related motion while minimizing camera exposure.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/3500868.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+            <article class="pub-card" data-category="cmc" data-order="14">
+                <div class="pub-tag pub-tag-venue">CSCW&rsquo;20 Poster</div>
+                <h3 class="pub-title">Investigating Information Needs for Awareness between Remote Workers</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Designed a pseudo-service and ran a one-week usability study with remote workers to examine which awareness information they wanted to share and receive.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/3406865.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+            <!-- Human-AI Interaction in Social and Conversational Systems -->
+            <article class="pub-card" data-category="hai" data-order="6">
+                <div class="pub-tag pub-tag-venue">IJHCS 2027</div>
+                <h3 class="pub-title">Applying Existing Design Recommendations to AI Companion Design</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Conducted a multi-method study assessing existing design recommendations for AI companions, showing that ethical and UX principles are intertwined and context-dependent.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/AIcompanion.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+            <article class="pub-card" data-category="hai" data-order="7">
+                <div class="pub-tag pub-tag-venue">HAI&rsquo;25 Poster</div>
+                <h3 class="pub-title">Exploring Short-Lived AI Companion Chatbots through Collaborative Autoethnography</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Led a 10-day collaborative autoethnography studying AI companion chatbots to rapidly and meaningfully engage with ephemeral and emotionally complex AI systems.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/3765830.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+            <article class="pub-card" data-category="hai" data-order="13">
+                <div class="pub-tag pub-tag-venue">HCIK 2021</div>
+                <h3 class="pub-title">Understanding Conversations with Smart Speakers in Single-Person Households</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Conducted a six-week field study of single households&rsquo; smart speaker use, revealing limits to casual conversation.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/SimSimi.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+            <article class="pub-card" data-category="hai" data-order="15">
+                <div class="pub-tag pub-tag-venue">HCIK 2020</div>
+                <h3 class="pub-title">Investigating Auditory Cues for Separateness of AI Speaker Services</h3>
+                <p class="pub-role">Lead Researcher</p>
+                <p class="pub-desc">Designed and conducted usability testing of smart speaker services featuring different auditory cues.</p>
+                <div class="pdf-chips">
+                    <a class="pdf-chip" href="pdf/Auditory.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg>PDF</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    &copy; Copyright <span id="copyright-year">2026</span> Soobin Cho.
+</div>
 
 </body>
 </html>
