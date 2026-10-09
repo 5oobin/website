@@ -474,16 +474,12 @@ a.contact-item:hover svg {
 .filter-btn[data-filter="cmc"]         { --c: var(--cat-cmc); --c-dark: var(--cat-cmc-dark); --c-tint: var(--cat-cmc-tint); --c-strong: var(--cat-cmc-strong); }
 .filter-btn[data-filter="hai"]         { --c: var(--cat-hai); --c-dark: var(--cat-hai-dark); --c-tint: var(--cat-hai-tint); --c-strong: var(--cat-hai-strong); }
 
-.filter-btn[data-filter="ai-mediated"],
-.filter-btn[data-filter="cmc"],
-.filter-btn[data-filter="hai"] {
-    display: inline-flex; align-items: baseline; gap: 8px;
-}
 .filter-btn[data-filter="ai-mediated"]::before,
 .filter-btn[data-filter="cmc"]::before,
 .filter-btn[data-filter="hai"]::before {
-    content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%;
-    background: var(--c); align-self: center;
+    content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+    margin-right: 8px; vertical-align: middle; position: relative; top: -1px;
+    background: var(--c);
     transition: background 0.18s ease;
 }
 .filter-btn[data-filter="ai-mediated"]:hover,
