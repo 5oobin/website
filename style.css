@@ -460,3 +460,51 @@ a.contact-item:hover svg {
         max-width: 100%;
     }
 }
+
+
+/* =========================
+   Category colors
+========================= */
+:root {
+    --cat-ai: #6883fc;   --cat-ai-dark: #4f66d6;   --cat-ai-tint: #eef1ff;   --cat-ai-strong: #dfe4ff;
+    --cat-cmc: #8b6fd0;  --cat-cmc-dark: #7154bb;  --cat-cmc-tint: #f3effc;  --cat-cmc-strong: #e4dbf6;
+    --cat-hai: #d4709a;  --cat-hai-dark: #b8507c;  --cat-hai-tint: #fcedf3;  --cat-hai-strong: #f6d8e5;
+}
+.filter-btn[data-filter="ai-mediated"] { --c: var(--cat-ai);  --c-dark: var(--cat-ai-dark);  --c-tint: var(--cat-ai-tint);  --c-strong: var(--cat-ai-strong); }
+.filter-btn[data-filter="cmc"]         { --c: var(--cat-cmc); --c-dark: var(--cat-cmc-dark); --c-tint: var(--cat-cmc-tint); --c-strong: var(--cat-cmc-strong); }
+.filter-btn[data-filter="hai"]         { --c: var(--cat-hai); --c-dark: var(--cat-hai-dark); --c-tint: var(--cat-hai-tint); --c-strong: var(--cat-hai-strong); }
+
+.filter-btn[data-filter="ai-mediated"],
+.filter-btn[data-filter="cmc"],
+.filter-btn[data-filter="hai"] {
+    display: inline-flex; align-items: baseline; gap: 8px;
+}
+.filter-btn[data-filter="ai-mediated"]::before,
+.filter-btn[data-filter="cmc"]::before,
+.filter-btn[data-filter="hai"]::before {
+    content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--c); align-self: center;
+    transition: background 0.18s ease;
+}
+.filter-btn[data-filter="ai-mediated"]:hover,
+.filter-btn[data-filter="cmc"]:hover,
+.filter-btn[data-filter="hai"]:hover {
+    background: var(--c-tint); border-color: var(--c-strong); color: var(--c-dark);
+}
+.filter-btn[data-filter="ai-mediated"].active,
+.filter-btn[data-filter="cmc"].active,
+.filter-btn[data-filter="hai"].active {
+    background: var(--c-dark); border-color: var(--c-dark); color: #fff;
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--c) 40%, transparent);
+}
+.filter-btn[data-filter="ai-mediated"].active::before,
+.filter-btn[data-filter="cmc"].active::before,
+.filter-btn[data-filter="hai"].active::before { background: #fff; }
+
+.pub-card { padding-left: 20px; border-left-width: 3px; }
+.pub-card[data-category="ai-mediated"] { border-left-color: var(--cat-ai); }
+.pub-card[data-category="cmc"]         { border-left-color: var(--cat-cmc); }
+.pub-card[data-category="hai"]         { border-left-color: var(--cat-hai); }
+.pub-card[data-category="ai-mediated"]:hover { border-color: var(--cat-ai-strong); border-left-color: var(--cat-ai); }
+.pub-card[data-category="cmc"]:hover         { border-color: var(--cat-cmc-strong); border-left-color: var(--cat-cmc); }
+.pub-card[data-category="hai"]:hover         { border-color: var(--cat-hai-strong); border-left-color: var(--cat-hai); }
